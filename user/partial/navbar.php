@@ -14,7 +14,6 @@
                 <li><a href="?logout=confirm">Logout
                     <?php
                         if($_GET['logout'] === 'confirm'){
-                            session_destroy();
                             header('Location:../index.php');
                         };
                     ?>

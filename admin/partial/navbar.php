@@ -14,12 +14,13 @@
                 <li><a href="?logout=confirm">Logout
                         <?php
                         if (isset($_GET['logout'])) {
-                            session_destroy();
                             header('Location:../index.php');
                         }
                         ;
                         ?>
                     </a></li>
+                <li><a href="../user/index.php">User Account</a></li>
+
             </ul>
         </div>
 
